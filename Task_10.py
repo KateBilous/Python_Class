@@ -13,11 +13,13 @@ str_ = "Leo Tolstoy*1828-08-28*1910-11-20"
 
 def age_determination_by_L_Tolstoy(str_):
     pars_arg = str_.split("*")
+    auth_name = pars_arg[0]
     time_of_birth = pars_arg[1]
     time_of_death = pars_arg[2]
     pars_ast1 = int(time_of_birth.split("-")[0])
     pars_ast2 = int(time_of_death.split("-")[0])
     age_author = pars_ast2 - pars_ast1
-    return print(age_author)
+    return auth_name, age_author
 
 call_func = age_determination_by_L_Tolstoy(str_)
+print(call_func)

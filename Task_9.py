@@ -8,7 +8,9 @@ def lower_cas2uppercase(one_word):
     s_nd = one_word.split()[1]
     t_rd = one_word.split()[2]
     uppercase = s_nd.upper()
-    return print(f_st, uppercase, t_rd)
+    name = f_st + " " + uppercase + " " + t_rd
+    return name
 
 
 call_def = lower_cas2uppercase("alex alex G")
+print(call_def)

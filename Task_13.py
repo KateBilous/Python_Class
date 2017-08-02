@@ -3,20 +3,18 @@
 
 # Площадь прямоугольного треугольника S = 1/2 a*b
 import math
+a = int(input("Введите сторону первого катета: "))
 
+b = int(input("Введите сторону второго катета: "))
 
-def square_of_triangle():
-    a = int(input("Введите сторону первого катета: "))
-
-    b = int(input("Введите сторону второго катета: "))
-
+def square_and_perim_of_triangle():
     square = 0.5 * (a * b)
     c = math.sqrt(a ** 2 + b ** 2)
 
     perim = a + b + c
 
-    return print("Площадь прямоугольного треугольника %d \n" % square +
-                 "Периметр прямоугольного треугольника %d " % perim)
+    return square, perim
 
 
-call_func = square_of_triangle()
+call_func = square_and_perim_of_triangle()
+print("Square of triangle and perimeter are: ", square_and_perim_of_triangle())
